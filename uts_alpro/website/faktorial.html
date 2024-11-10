@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Faktorial</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Algoritma & Pemograman</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#tutorials">Flowchart</a>
+                <a href="#practice">Practice</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h2>Menghitung Faktorial</h2>
+        <h3>Deskripsi</h3>
+        <p>Faktorial dari sebuah bilangan bulat positif n adalah hasil kali dari semua bilangan bulat positif kurang dari atau sama dengan n.</p>
+        
+        <div class="flowchart-image">
+            <img src="path/to/your/flowchart_image.png" alt="Flowchart Faktorial">
+        </div>
+
+        <h3>Pseudocode</h3>
+        <pre class="code-block">
+        Fungsi Faktorial(n):
+            Jika n == 0:
+                Kembalikan 1
+            Lain:
+                Kembalikan n * Faktorial(n - 1)
+        </pre>
+
+        <h3>Contoh Kode C++</h3>
+        <pre class="code-block">
+        #include <iostream>
+        using namespace std;
+
+        int faktorial(int n) {
+            if (n == 0)
+                return 1;
+            else
+                return n * faktorial(n - 1);
+        }
+
+        int main() {
+            int num;
+            cout << "Masukkan bilangan: ";
+            cin >> num;
+            cout << "Faktorial dari " << num << " adalah " << faktorial(num) << endl;
+            return 0;
+        }
+        </pre>
+    </main>
+</body>
+</html>
