@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rata-rata dari N Bilangan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <style>
+        .sub-header {
+            color: #3d3b2f;
+            margin-top: 40px; 
+        }
+
+        .code-block {
+            background: #ffffff; 
+            padding: 1rem; 
+            border-radius: 8px; 
+            margin-top: 1rem; 
+        }
+
+        .flowchart-image {
+            background: #ffffff; 
+            padding: 1rem; 
+            border-radius: 8px; 
+            margin-top: 1rem; 
+        }
+
+        .next-page-button {
+            display: inline-flex;
+            align-items: center;
+            background-color: #3d3b2f; 
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+            border: none; 
+            cursor: pointer; 
+        }
+
+        .next-page-button:hover {
+            background-color: #5a5a4f; 
+        }
+
+        .next-page-button i {
+            margin-right: 8px; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Algoritma & Pemograman</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#practice">Test the Code</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h2>Rata-rata dari N Bilangan</h2>
+        <h3 class="sub-header">Deskripsi</h3>
+        <pre class="code-block">
+        <p>Anda bisa memasukkan berbagai bilangan dan sebanyak apapun untuk dihitung rata-ratanya.</p>
+        </pre>
+        <h3 class="sub-header">Pseudocode</h3>
+        <pre class="code-block">
+Fungsi HitungRataRata(array):
+    jika panjang(array) == 0:
+        kembalikan "Array kosong"
+    total = 0
+    untuk setiap bilangan dalam array:
+        total += bilangan
+    rataRata = total / panjang(array)
+    kembalikan rataRata
+        </pre>
+
+        <h3 class="sub-header">Contoh Kode C++</h3>
+        <pre class="code-block">
+#include <iostream>
+using namespace std;
+
+int main() {
+    int jumlahBaris = 5;
+    for(int baris = 1; baris <= jumlahBaris; baris++) {
+        int bintangDiBaris = jumlahBaris - baris + 1;
+        
+        for(int bintang = 1; bintang <= bintangDiBaris; bintang++) {
+            cout << "*";
+        }
+        
+        cout << endl;
+    }
+    
+    return 0;
+}
+        </pre>
+        
+        <a href="index.html" class="next-page-button">
+            <i class="fas fa-arrow-right"></i> Main Dashboard
+        </a>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Andrew Steine & Michael Azarya. TUGAS UTS ALGORITMA & PEMOGRAMAN</p>
+        </div>
+    </footer>
+</body>
+</html>
