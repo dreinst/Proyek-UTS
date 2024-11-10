@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mencari Bilangan Terbesar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <style>
+        .sub-header {
+            color: #3d3b2f;
+            margin-top: 40px; 
+        }
+        
+        .code-block {
+            background: #ffffff; 
+            padding: 1rem; 
+            border-radius: 8px; 
+            margin-top: 1rem; 
+        }
+
+        .flowchart-image {
+            background: #ffffff; 
+            padding: 1rem; 
+            border-radius: 8px; 
+            margin-top: 1rem; 
+        }
+
+        .next-page-button {
+            display: inline-flex;
+            align-items: center;
+            background-color: #3d3b2f; 
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+            border: none; 
+            cursor: pointer; 
+        }
+
+        .next-page-button:hover {
+            background-color: #3d3b2f; 
+        }
+
+        .next-page-button i {
+            margin-right: 8px; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Algoritma & Pemograman</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#practice">Test the Code</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h2>Mencari Bilangan Terbesar</h2>
+        
+        <h3 class="sub-header">Deskripsi</h3>
+        <pre class="code-block">
+        <p>Bilangan terbesar dari sekumpulan bilangan adalah </p>
+        <p>bilangan dengan nilai maksimum dalam kumpulan tersebut.</p>
+        <p>Contoh: Dari sekumpulan bilangan 3, 7, 2, dan 9, bilangan terbesar adalah 9.</p>
+                    </pre>
+        <br> 
+        <h3 class="sub-header">Flowchart Faktorial</h3>
+        <div class="flowchart-image">
+            <img src="path/to/your/flowchart_image.png" alt="Flowchart Mencari Bilangan Terbesar">
+        </div>
+
+        <h3 class="sub-header">Pseudocode</h3>
+        <pre class="code-block">
+Fungsi CariTerbesar(array):
+    jika panjang(array) == 0:
+        kembalikan "Array kosong"
+    terbesar = array[0]
+    untuk setiap bilangan dalam array:
+        jika bilangan > terbesar:
+            terbesar = bilangan
+    kembalikan terbesar
+        </pre>
+        
+        <h3 class="sub-header">Contoh Kode C++</h3>
+        <pre class="code-block">
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c, max;
+    
+    cout << "Masukkan tiga bilangan:\n";
+    cout << "Bilangan pertama: ";
+    cin >> a;
+    cout << "Bilangan kedua: ";
+    cin >> b;
+    cout << "Bilangan ketiga: ";
+    cin >> c;
+    
+    if(a > b) {
+        if(a > c) {
+            max = a;
+        } else {
+            max = c;
+        }
+    } else {
+        if(b > c) {
+            max = b;
+        } else {
+            max = c;
+        }
+    }
+    
+    cout << "Bilangan terbesar adalah: " << max;
+    return 0;
+}
+        </pre>
+        
+        <a href="rata-rata.html" class="next-page-button">
+            <i class="fas fa-arrow-right"></i> Next Page
+        </a>
+    </main>
+</body>
+</html>
